@@ -98,7 +98,7 @@ void CraterManager::createCraterAreaTextFile(){
     }
     for (const Crater& crater : craters) {
         double area = PI * pow(crater.getRadius(), 2);
-        area = round(area * 100) / 100; // Round to 2 decimal places
+        area = round(area * 100) / 100;
         file << area << "\t" << crater.getName() << std::endl;
     }
     file.close();
